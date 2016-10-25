@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 23
+  buildToolsVersion "23.0.3"
+
+  /*
+  sourceSets {
+    main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src/main/java']
+      resources.srcDirs = ['src/main/resources']
+      aidl.srcDirs = ['src']
+      renderscript.srcDirs = ['src']
+      res.srcDirs = ['res']
+      assets.srcDirs = ['assets']
+    }
+  }
+  */
+
+  defaultConfig {
+    applicationId 'com.cooleval.speech.recognitionApp'
+    minSdkVersion 14
+    versionCode 0
+    versionName "0.1"
+  }
+}
+
+android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+
+dependencies {
+  compile 'com.loopj.android:android-async-http:1.4.9'
+  compile 'org.apache.commons:commons-io:1.3.2'
+}
